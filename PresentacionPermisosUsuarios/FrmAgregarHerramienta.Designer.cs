@@ -159,6 +159,7 @@
             this.BtnGuardar.Size = new System.Drawing.Size(72, 31);
             this.BtnGuardar.TabIndex = 3;
             this.BtnGuardar.UseVisualStyleBackColor = true;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // BtnSalir
             // 
@@ -170,6 +171,7 @@
             this.BtnSalir.Size = new System.Drawing.Size(38, 35);
             this.BtnSalir.TabIndex = 1;
             this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // FrmAgregarHerramienta
             // 

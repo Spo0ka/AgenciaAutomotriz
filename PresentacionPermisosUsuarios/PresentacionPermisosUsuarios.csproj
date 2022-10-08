@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3C8CB8AD-7394-43F3-B80D-507B8338AE59}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PresentacionPermisosUsuarios</RootNamespace>
     <AssemblyName>PresentacionPermisosUsuarios</AssemblyName>
@@ -29,6 +29,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -110,6 +113,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\salvado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesPermisosUsuarios\EntidadesPermisosUsuarios.csproj">
+      <Project>{139243f5-0417-47f9-8b45-d6d3e5dc337c}</Project>
+      <Name>EntidadesPermisosUsuarios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManejadorPermisoUsuarios\ManejadorPermisoUsuarios.csproj">
+      <Project>{b809f3f1-30f2-4061-852c-39ec9840e2a2}</Project>
+      <Name>ManejadorPermisoUsuarios</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

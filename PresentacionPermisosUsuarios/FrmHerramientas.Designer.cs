@@ -31,9 +31,9 @@
             this.DtgMostrar = new System.Windows.Forms.DataGridView();
             this.TxtBuscar = new System.Windows.Forms.TextBox();
             this.BtnBuscar = new System.Windows.Forms.Button();
-            this.BtnAgregar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnAgregar = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DtgMostrar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -48,6 +48,8 @@
             this.DtgMostrar.Name = "DtgMostrar";
             this.DtgMostrar.Size = new System.Drawing.Size(884, 360);
             this.DtgMostrar.TabIndex = 1;
+            this.DtgMostrar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgMostrar_CellClick);
+            this.DtgMostrar.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgMostrar_CellEnter);
             // 
             // TxtBuscar
             // 
@@ -64,17 +66,7 @@
             this.BtnBuscar.TabIndex = 3;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // BtnAgregar
-            // 
-            this.BtnAgregar.BackgroundImage = global::PresentacionPermisosUsuarios.Properties.Resources.anadir;
-            this.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnAgregar.Location = new System.Drawing.Point(844, 148);
-            this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(48, 35);
-            this.BtnAgregar.TabIndex = 2;
-            this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // panel1
             // 
@@ -98,6 +90,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Herramientas";
             // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.BackgroundImage = global::PresentacionPermisosUsuarios.Properties.Resources.anadir;
+            this.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnAgregar.Location = new System.Drawing.Point(844, 148);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(48, 35);
+            this.BtnAgregar.TabIndex = 2;
+            this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
             // BtnSalir
             // 
             this.BtnSalir.BackgroundImage = global::PresentacionPermisosUsuarios.Properties.Resources.cerrar;
@@ -108,6 +112,7 @@
             this.BtnSalir.Size = new System.Drawing.Size(38, 35);
             this.BtnSalir.TabIndex = 1;
             this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // FrmHerramientas
             // 
@@ -123,6 +128,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "FrmHerramientas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHerramientas";
             ((System.ComponentModel.ISupportInitialize)(this.DtgMostrar)).EndInit();
             this.panel1.ResumeLayout(false);

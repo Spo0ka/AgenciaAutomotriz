@@ -10,7 +10,7 @@ namespace AccesoDatos
     public interface IAcceso
     {
         void Guardar(dynamic entidad);
-        DataSet Mostrar(dynamic entidad);
+        DataSet Mostrar(string entidad);
         void Borrar(dynamic entidad);
 
     }

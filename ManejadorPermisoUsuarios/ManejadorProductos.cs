@@ -19,7 +19,11 @@ namespace ManejadorPermisoUsuarios
         Grafico g = new Grafico();
         public void Borrar(dynamic entidad)
         {
-            Adp.Borrar(entidad);
+            DialogResult rs = MessageBox.Show("Estas seguro de borrar?", "cuidado", MessageBoxButtons.YesNo);
+            if (rs == DialogResult.Yes)
+            {
+                Adp.Borrar(entidad);
+            }
         }
 
         public void Guardar(dynamic entidad)

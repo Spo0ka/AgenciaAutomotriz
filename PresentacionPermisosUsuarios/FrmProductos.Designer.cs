@@ -69,6 +69,7 @@
             this.BtnBuscar.TabIndex = 8;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // TxtBuscar
             // 
@@ -86,6 +87,8 @@
             this.DtgMostrar.Name = "DtgMostrar";
             this.DtgMostrar.Size = new System.Drawing.Size(884, 360);
             this.DtgMostrar.TabIndex = 5;
+            this.DtgMostrar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgMostrar_CellClick);
+            this.DtgMostrar.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgMostrar_CellEnter);
             // 
             // BtnSalir
             // 
@@ -97,6 +100,7 @@
             this.BtnSalir.Size = new System.Drawing.Size(38, 35);
             this.BtnSalir.TabIndex = 1;
             this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // BtnAgregar
             // 
@@ -108,6 +112,7 @@
             this.BtnAgregar.Size = new System.Drawing.Size(48, 35);
             this.BtnAgregar.TabIndex = 6;
             this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // FrmProductos
             // 

@@ -1,0 +1,6 @@
+C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\EntidadesPermisosUsuarios\bin\Debug\EntidadesPermisosUsuarios.dll
+C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\EntidadesPermisosUsuarios\bin\Debug\EntidadesPermisosUsuarios.pdb
+C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\EntidadesPermisosUsuarios\obj\Debug\EntidadesPermisosUsuarios.csproj.AssemblyReference.cache
+C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\EntidadesPermisosUsuarios\obj\Debug\EntidadesPermisosUsuarios.csproj.CoreCompileInputs.cache
+C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\EntidadesPermisosUsuarios\obj\Debug\EntidadesPermisosUsuarios.dll
+C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\EntidadesPermisosUsuarios\obj\Debug\EntidadesPermisosUsuarios.pdb

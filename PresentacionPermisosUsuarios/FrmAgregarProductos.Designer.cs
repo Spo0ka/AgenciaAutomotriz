@@ -37,7 +37,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtCh = new System.Windows.Forms.TextBox();
+            this.txtCB = new System.Windows.Forms.TextBox();
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -65,6 +65,7 @@
             this.BtnSalir.Size = new System.Drawing.Size(38, 35);
             this.BtnSalir.TabIndex = 1;
             this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // label1
             // 
@@ -124,12 +125,12 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Nombre";
             // 
-            // txtCh
+            // txtCB
             // 
-            this.txtCh.Location = new System.Drawing.Point(90, 211);
-            this.txtCh.Name = "txtCh";
-            this.txtCh.Size = new System.Drawing.Size(239, 31);
-            this.txtCh.TabIndex = 16;
+            this.txtCB.Location = new System.Drawing.Point(90, 211);
+            this.txtCB.Name = "txtCB";
+            this.txtCB.Size = new System.Drawing.Size(239, 31);
+            this.txtCB.TabIndex = 16;
             // 
             // BtnGuardar
             // 
@@ -145,6 +146,7 @@
             this.BtnGuardar.TabIndex = 15;
             this.BtnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGuardar.UseVisualStyleBackColor = true;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // label2
             // 
@@ -167,7 +169,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtCh);
+            this.Controls.Add(this.txtCB);
             this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -193,7 +195,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtCh;
+        private System.Windows.Forms.TextBox txtCB;
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Label label2;
     }

@@ -16,5 +16,22 @@ namespace PresentacionPermisosUsuarios
         {
             InitializeComponent();
         }
+
+        private void TPBREGRESAR_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void TsbProductos_Click(object sender, EventArgs e)
+        {
+            FrmProductos frmProductos = new FrmProductos();
+            frmProductos.ShowDialog();
+        }
+
+        private void TSBHerramientas_Click(object sender, EventArgs e)
+        {
+            FrmHerramientas frmHerramientas = new FrmHerramientas();
+            frmHerramientas.ShowDialog();
+        }
     }
 }

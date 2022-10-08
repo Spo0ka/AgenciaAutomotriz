@@ -11,7 +11,7 @@ namespace AccesoDatos
 {
     public class AccesoDatosHerramientas : IAcceso
     {
-        Base b = new Base("localhost","Root","", "AgenciaAutomotriz");
+        Base b = new Base("Localhost","root","", "AgenciaAutomotriz");
         public void Borrar(dynamic entidad)
         {
             b.comando(String.Format("Call DeleteHerramientas('{0}')",entidad.CodigoHerramientas));
@@ -20,13 +20,13 @@ namespace AccesoDatos
 
         public void Guardar(dynamic entidad)
         {
-            b.comando(String.Format("Call DeleteHerramientas('{0}','{1}',{2},'{3}','{4}')", entidad.CodigoHerramientas,
+            b.comando(String.Format("Call InsertHerramientas('{0}','{1}',{2},'{3}','{4}')", entidad.CodigoHerramientas,
                 entidad.Nombre,entidad.Medida, entidad.Marca,entidad.Descripcion));
         }
 
-        public DataSet Mostrar(dynamic entidad)
+        public DataSet Mostrar(string entidad)
         {
-          return  b.Obtener(String.Format("call ShowProductos('%{0}%')",entidad), "herramientas");
+          return  b.Obtener(String.Format("call ShowHerramientas('%{0}%')", entidad),"herramientas");
         }
     }
 }

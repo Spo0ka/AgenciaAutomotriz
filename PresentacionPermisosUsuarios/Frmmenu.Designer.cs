@@ -57,6 +57,7 @@
             this.TsbProductos.Name = "TsbProductos";
             this.TsbProductos.Size = new System.Drawing.Size(40, 40);
             this.TsbProductos.Text = "Productos";
+            this.TsbProductos.Click += new System.EventHandler(this.TsbProductos_Click);
             // 
             // TSBHerramientas
             // 
@@ -67,6 +68,7 @@
             this.TSBHerramientas.Name = "TSBHerramientas";
             this.TSBHerramientas.Size = new System.Drawing.Size(40, 40);
             this.TSBHerramientas.Text = "Herramientas";
+            this.TSBHerramientas.Click += new System.EventHandler(this.TSBHerramientas_Click);
             // 
             // TPBREGRESAR
             // 
@@ -77,6 +79,7 @@
             this.TPBREGRESAR.Name = "TPBREGRESAR";
             this.TPBREGRESAR.Size = new System.Drawing.Size(40, 40);
             this.TPBREGRESAR.Text = "Regresar";
+            this.TPBREGRESAR.Click += new System.EventHandler(this.TPBREGRESAR_Click);
             // 
             // Frmmenu
             // 
