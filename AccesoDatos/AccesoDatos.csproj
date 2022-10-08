@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ConectarBd">
+      <HintPath>..\..\..\..\OneDrive\Escritorio\5to\4to\ConectarBd\ConectarBd\bin\Debug\ConectarBd.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,7 +46,14 @@
   <ItemGroup>
     <Compile Include="AccesoDatosHerramientas.cs" />
     <Compile Include="AccesoDatosProducto.cs" />
+    <Compile Include="Interface1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesPermisosUsuarios\EntidadesPermisosUsuarios.csproj">
+      <Project>{139243f5-0417-47f9-8b45-d6d3e5dc337c}</Project>
+      <Name>EntidadesPermisosUsuarios</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
