@@ -12,7 +12,7 @@ namespace PresentacionPermisosUsuarios
         [STAThread]
         static void Main() 
         {
-            Application.Run(new Frmmenu());
+            Application.Run(new FrmLogin());
         }
     }
 }

@@ -64,6 +64,12 @@
     <Compile Include="FrmHerramientas.Designer.cs">
       <DependentUpon>FrmHerramientas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frmmenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     <EmbeddedResource Include="FrmHerramientas.resx">
       <DependentUpon>FrmHerramientas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frmmenu.resx">
       <DependentUpon>Frmmenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +124,10 @@
     <None Include="Resources\salvado.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
+      <Project>{f51ba98b-0234-4422-a6a9-4dbb549cdea9}</Project>
+      <Name>AccesoDatos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EntidadesPermisosUsuarios\EntidadesPermisosUsuarios.csproj">
       <Project>{139243f5-0417-47f9-8b45-d6d3e5dc337c}</Project>
       <Name>EntidadesPermisosUsuarios</Name>
@@ -123,6 +136,12 @@
       <Project>{b809f3f1-30f2-4061-852c-39ec9840e2a2}</Project>
       <Name>ManejadorPermisoUsuarios</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\programador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contrasena.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

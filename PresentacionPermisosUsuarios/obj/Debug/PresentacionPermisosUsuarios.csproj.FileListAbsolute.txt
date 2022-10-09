@@ -46,3 +46,4 @@ C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\PresentacionPermisosUsu
 C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\PresentacionPermisosUsuarios\obj\Debug\PresentacionPermisosUsuarios.csproj.CopyComplete
 C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\PresentacionPermisosUsuarios\obj\Debug\PresentacionPermisosUsuarios.exe
 C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\PresentacionPermisosUsuarios\obj\Debug\PresentacionPermisosUsuarios.pdb
+C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\PresentacionPermisosUsuarios\obj\Debug\PresentacionPermisosUsuarios.FrmLogin.resources
