@@ -15,20 +15,23 @@ namespace AccesoDatos
     {
         
        public MySqlConnection con = new MySqlConnection(String.Format("server = localhost;database=AgenciaAutomotriz; user=root; password="));
+        Base b = new Base("localhost","root","", "AgenciaAutomotriz");
         
         public void Borrar(dynamic entidad)
         {
-            throw new NotImplementedException();
+            b.comando(String.Format("Call DeleteUsuario({0})",entidad.Idusuario));
         }
 
         public void Guardar(dynamic entidad)
         {
-            throw new NotImplementedException();
+            b.comando(String.Format("Call insertUsuario({0},'{1}','{2}','{3}','{4}','{5}','{6}')",
+                entidad.Idusuario,entidad.Nombre,entidad.Apellidop,
+                entidad.ApellidoM,entidad.Fdn,entidad.Rfc,entidad.Contra));
         }
 
         public DataSet Mostrar(string entidad)
         {
-            throw new NotImplementedException();
+            return b.Obtener(string.Format("Call ShowUsuarios('%{0}%')",entidad),"usuarios");
         }
         public bool Login2(string usuario, string contra)
         {

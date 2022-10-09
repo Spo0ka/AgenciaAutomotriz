@@ -32,6 +32,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.TsbProductos = new System.Windows.Forms.ToolStripButton();
             this.TSBHerramientas = new System.Windows.Forms.ToolStripButton();
+            this.TsbUsuario = new System.Windows.Forms.ToolStripButton();
             this.TPBREGRESAR = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -41,6 +42,7 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsbProductos,
             this.TSBHerramientas,
+            this.TsbUsuario,
             this.TPBREGRESAR});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -69,6 +71,17 @@
             this.TSBHerramientas.Size = new System.Drawing.Size(40, 40);
             this.TSBHerramientas.Text = "Herramientas";
             this.TSBHerramientas.Click += new System.EventHandler(this.TSBHerramientas_Click);
+            // 
+            // TsbUsuario
+            // 
+            this.TsbUsuario.AutoSize = false;
+            this.TsbUsuario.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TsbUsuario.Image = ((System.Drawing.Image)(resources.GetObject("TsbUsuario.Image")));
+            this.TsbUsuario.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbUsuario.Name = "TsbUsuario";
+            this.TsbUsuario.Size = new System.Drawing.Size(40, 40);
+            this.TsbUsuario.Text = "Usuarios";
+            this.TsbUsuario.Click += new System.EventHandler(this.TsbUsuario_Click);
             // 
             // TPBREGRESAR
             // 
@@ -104,5 +117,6 @@
         private System.Windows.Forms.ToolStripButton TsbProductos;
         private System.Windows.Forms.ToolStripButton TSBHerramientas;
         private System.Windows.Forms.ToolStripButton TPBREGRESAR;
+        private System.Windows.Forms.ToolStripButton TsbUsuario;
     }
 }

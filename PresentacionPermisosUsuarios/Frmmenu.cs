@@ -19,7 +19,7 @@ namespace PresentacionPermisosUsuarios
 
         private void TPBREGRESAR_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Close();
         }
 
         private void TsbProductos_Click(object sender, EventArgs e)
@@ -32,6 +32,12 @@ namespace PresentacionPermisosUsuarios
         {
             FrmHerramientas frmHerramientas = new FrmHerramientas();
             frmHerramientas.ShowDialog();
+        }
+
+        private void TsbUsuario_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios frmUsuarios = new FrmUsuarios();
+            frmUsuarios.ShowDialog();
         }
     }
 }
