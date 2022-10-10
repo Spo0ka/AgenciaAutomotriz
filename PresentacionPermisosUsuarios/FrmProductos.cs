@@ -10,18 +10,26 @@ using System.Windows.Forms;
 using ManejadorPermisoUsuarios;
 using EntidadesPermisosUsuarios;
 using System.Linq.Expressions;
+using AccesoDatos;
 
 namespace PresentacionPermisosUsuarios
 {
     public partial class FrmProductos : Form
     {
         ManejadorProductos MP;
+        FrmLogin FrmLogin;
+        Frmmenu M;
+       
         public static Productos P = new Productos("","","","");
+        public static bool Admin = false, Ejecutivo = false, Empleado = false;
         int fila = 0, columna = 0;
         public FrmProductos()
         {
             InitializeComponent();
             MP = new ManejadorProductos();
+            FrmLogin = new FrmLogin();
+            M = new Frmmenu();
+          
         }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
@@ -50,10 +58,28 @@ namespace PresentacionPermisosUsuarios
             P.Marca = DtgMostrar.Rows[fila].Cells[3].Value.ToString();
             switch (columna)
             {
-                case 4: { FrmAgregarProductos frmAgregarProductos = new FrmAgregarProductos();
-                        frmAgregarProductos.ShowDialog();
+                case 4: {
+                        if (Empleado == true)
+                        {
+                            MessageBox.Show("Nah mu amigo permisos naoh naoh");
+                        }
+                        else
+                        {
+                            FrmAgregarProductos frmAgregarProductos = new FrmAgregarProductos();
+                            frmAgregarProductos.ShowDialog();
+                        }
+                        
                     }break;
-                case 5: { MP.Borrar(P); } break;
+                case 5: {
+                        if (Admin == true)
+                        {
+                            MP.Borrar(P);
+                        }
+                        else
+                        {
+                            MessageBox.Show("OH OH NO PERMISOS");
+                        }
+                         } break;
                 default:
                     break;
             }
@@ -63,6 +89,19 @@ namespace PresentacionPermisosUsuarios
         {
             actualizar();
             
+        }
+
+        public void cosa()
+        {
+            Admin = Frmmenu.Admin;
+            Ejecutivo = Frmmenu.Ejecutivo;
+            Empleado = Frmmenu.Empleado;
+            MP.Permisus(Admin, Ejecutivo, Empleado, BtnAgregar);
+        }
+
+        private void FrmProductos_Load(object sender, EventArgs e)
+        {
+            cosa();
         }
 
         void actualizar() {

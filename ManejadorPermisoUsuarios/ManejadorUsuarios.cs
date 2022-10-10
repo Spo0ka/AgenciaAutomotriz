@@ -43,5 +43,7 @@ namespace ManejadorPermisoUsuarios
             tabla.Columns.Insert(8, g.Boton("Eliminar", Color.FromArgb(199, 0, 57)));
             tabla.Columns[0].Visible = false;
         }
+
+        
     }
 }

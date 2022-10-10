@@ -41,5 +41,19 @@ namespace ManejadorPermisoUsuarios
             tabla.Columns[0].Visible = false;
 
         }
+
+        public void Permisus(bool admin, bool ejec, bool emple, Button Add)
+        {
+            if (ejec == true)
+            {
+               
+            }
+            if (emple == true)
+            {
+                
+                Add.Visible = false;
+            }
+        }
+
     }
 }

@@ -37,5 +37,13 @@ namespace ManejadorPermisoUsuarios
             tabla.Columns.Insert(6, g.Boton("Eliminar", Color.FromArgb(199, 0, 57)));
             tabla.Columns[0].Visible = false;
         }
+
+        public void Permisus(bool admin, bool ejecutivo, bool empleado, Button Add)
+        {
+            if (empleado)
+            {
+                Add.Visible = false;
+            }
+        }
     }
 }

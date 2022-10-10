@@ -18,6 +18,7 @@ namespace PresentacionPermisosUsuarios
         ManejadorUsuarios Mu;
         public static Usuarios U = new Usuarios(0, "", "", "", "", "", "");
         int columna = 0, fila = 0;
+        bool admin, ejecutivo;
         public FrmUsuarios()
         {
             InitializeComponent();
@@ -55,9 +56,29 @@ namespace PresentacionPermisosUsuarios
                 case 7: { FrmAgregarUsario frmAgregarUsario = new FrmAgregarUsario();
                         frmAgregarUsario.ShowDialog();
                     } break;
-                case 8: { Mu.Borrar(U); } break;
+                case 8: {
+                        if (admin == true)
+                        {
+                            Mu.Borrar(U);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No hay permisos");
+                        }
+                         } break;
                 default: break;
             }
+        }
+        void cosa() 
+        {
+            admin = Frmmenu.Admin;
+            ejecutivo = Frmmenu.Ejecutivo;
+
+        }
+
+        private void FrmUsuarios_Load(object sender, EventArgs e)
+        {
+            cosa();
         }
 
         private void DtgMostrar_CellEnter(object sender, DataGridViewCellEventArgs e)

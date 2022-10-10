@@ -49,3 +49,5 @@ C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\PresentacionPermisosUsu
 C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\PresentacionPermisosUsuarios\obj\Debug\PresentacionPermisosUsuarios.FrmLogin.resources
 C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\PresentacionPermisosUsuarios\obj\Debug\PresentacionPermisosUsuarios.FrmUsuarios.resources
 C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\PresentacionPermisosUsuarios\obj\Debug\PresentacionPermisosUsuarios.FrmAgregarUsario.resources
+C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\PresentacionPermisosUsuarios\obj\Debug\PresentacionPermisosUsuarios.FrmAgregarPermisos.resources
+C:\Users\Spo0k\source\repos\PresentacionPermisosUsuarios\PresentacionPermisosUsuarios\obj\Debug\PresentacionPermisosUsuarios.FrmPermisos.resources

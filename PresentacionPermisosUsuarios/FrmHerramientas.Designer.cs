@@ -131,6 +131,7 @@
             this.Name = "FrmHerramientas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHerramientas";
+            this.Load += new System.EventHandler(this.FrmHerramientas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DtgMostrar)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

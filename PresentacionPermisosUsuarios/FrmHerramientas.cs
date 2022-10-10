@@ -18,10 +18,13 @@ namespace PresentacionPermisosUsuarios
         ManejadorHerramientas MH;
         public static Herramientas H = new Herramientas("", "", 0, "", "");
         int Columna = 0, fila = 0;
+         bool Admin = false, Ejecutivo = false, Empleado = false;
+        Frmmenu F;
         public FrmHerramientas()
         {
             InitializeComponent();
             MH=new ManejadorHerramientas();
+            F = new Frmmenu();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
@@ -50,13 +53,42 @@ namespace PresentacionPermisosUsuarios
             H.Descripcion = DtgMostrar.Rows[fila].Cells[4].Value.ToString();
             switch (Columna)
             {
-                case 5: { FrmAgregarHerramienta frmAgregarHerramienta = new FrmAgregarHerramienta();
-                        frmAgregarHerramienta.ShowDialog();
+                case 5: {
+                        if (Empleado)
+                        {
+                            MessageBox.Show("No tienes los permisos joven");
+                        }
+                        else
+                        {
+                            FrmAgregarHerramienta frmAgregarHerramienta = new FrmAgregarHerramienta();
+                            frmAgregarHerramienta.ShowDialog();
+                        }
+                        
                     } break;
-                case 6: { MH.Borrar(H); } break;
+                case 6: {
+                        if (Admin == true)
+                        {
+                            MH.Borrar(H);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No tienes permisos");
+                        }
+                         } break;
                 default:
                     break;
             }
+        }
+        void cosa()
+        {
+            Admin = Frmmenu.Admin;
+            Ejecutivo = Frmmenu.Ejecutivo;
+            Empleado = Frmmenu.Empleado;
+            MH.Permisus(Admin, Ejecutivo, Empleado, BtnAgregar);
+        }
+        private void FrmHerramientas_Load(object sender, EventArgs e)
+        {
+            cosa();
         }
 
         private void DtgMostrar_CellEnter(object sender, DataGridViewCellEventArgs e)

@@ -33,6 +33,7 @@ namespace AccesoDatos
         {
             return b.Obtener(string.Format("Call ShowUsuarios('%{0}%')",entidad),"usuarios");
         }
+        
         public bool Login2(string usuario, string contra)
         {
             

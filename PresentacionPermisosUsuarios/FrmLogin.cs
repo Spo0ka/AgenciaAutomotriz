@@ -16,16 +16,19 @@ namespace PresentacionPermisosUsuarios
     public partial class FrmLogin : Form
     {
         ManejadorUsuarios Mu;
-       
+        public static string UsuarioEpiko = "";
+        
         public FrmLogin()
         {
             InitializeComponent();
             Mu = new ManejadorUsuarios();
+            
         }
-
+       
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            
         }
         
         private void BtnLOG_Click(object sender, EventArgs e)
@@ -34,14 +37,21 @@ namespace PresentacionPermisosUsuarios
             if (Cosa == true)
             {
                 MessageBox.Show("EN DON CAMARON");
+                UsuarioEpiko = TxtUsuario.Text;
                 Frmmenu frmmenu = new Frmmenu();
                 frmmenu.ShowDialog();
-            }
+                 
+    }
             else
             {
                 MessageBox.Show("MI LOCO NINO ES LA BESTO QUINTILLIZA? O ES ENAMORAMIENTO");
             }
             
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
